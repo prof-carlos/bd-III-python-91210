@@ -30,7 +30,9 @@ def main():
     service.listar_todos_usuarios()
 
     # Pesquisar apenas um usuário no banco de dados.
-    service.()
+    print("\nPesquisar usuário: ")  
+    email_usuario = input("Informe o e-mail do usuário: ")
+    service.pesquisar_usuario_por_email(email_usuario)
     
 
 if __name__ == "__main__":
